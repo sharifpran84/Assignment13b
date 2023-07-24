@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1370px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.headerSection{
+    background-image: url(./photo-1471879832106-c7ab9e0cee23.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: 600px;
+    width: 100%;
+}
+.menuSection{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.logu {
+    width: 15%;
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.menu {
+    width: 80%;
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    right: -15%;
+}
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 10px;
+    color: white;
+    text-transform: uppercase;
+}
+.menu ul li a:hover{
+    color: #ef664d;
+}
+.text h1{
+    position: absolute;
+    top: 250px;
+    left: 21%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 59px;
+}
+.text h1::before{
+    content: "\f10d";
+    font: var(--fa-font-solid);
+    position: absolute;
+    top: -18px;
+    left: -9%;
+    color: #ef664d;
+}
+.text{
+    position: relative;
+}
+.text h1::after{
+    content: "\f10e";
+    font: var(--fa-font-solid);
+    position: absolute;
+    top: -18px;
+    left: 101%;
+    color: #ef664d;
+}
+.containSection{
+    padding: 30px 0;
+}
+.aboutSecton h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+}
+.image{
+    width: 250px;
+    display: inline-block;
+    box-shadow: 0px 0px 24px black;
+    border: 2px solid #ef664d;
+}
+.textSection{
+    display: inline-block;
+    width: 1050px;
+    text-align: justify;
+    margin-left: 60px;
+}
+.serviceSction{
+    background: #2e3e4e;
+}
+.servicegrid{
+    text-align: center;
+    padding: 50px;
+}
+.servicegrid h1 {
+    text-transform: uppercase;
+    color: #ef664d;
+    font-size: 40px;
+    padding: 30px;
+}
+.service{
+    display: inline-block;
+    margin: 0 70px;
+    font-size: 20px;
+}
+.service i{
+    color: white;
+    margin: 15px 0;
+    background: #ef664d;
+    width: 80px;
+    height: 80px;
+    line-height: 2;
+    font-size: 35px;
+    border-radius: 0 40px 0 40px;
+}
+.service h2{
+    color: white;
+    margin: 15px 0;
+}
+.service ul li{
+    list-style: none;
+    color: white;
+}
+.service ul li::before{
+    content: "\f560";
+    font: var(--fa-font-solid);
+    color: #ef664d;
+    margin: 0 5px;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background: #ef664d;
+    padding: 10px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+.btn1:hover::before{
+    width: 100%;
+}
+.btn1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: rgb(236, 236, 138);
+    z-index: -1;
+    transition: 1s;
+    border-radius: 10px;
+}
+.btn2:hover::before{
+    height: 100%;
+}
+.btn2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background: rgb(236, 236, 138);
+    z-index: -1;
+    transition: 1s;
+    border-radius: 10px;
+}
+.btn3:hover::before{
+    width: 100%;
+}
+.btn3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    background: rgb(236, 236, 138);
+    z-index: -1;
+    transition: 1s;
+    border-radius: 10px;
+}
+.contact{
+    padding: 30px;
+}
+.contactSection{
+    text-align: center;
+}
+.name{
+    width: 500px;
+    margin: 10px 0;
+    padding: 15px 15px;
+    border: none;
+    border-bottom: 2px solid #ef664d;
+    outline: none;
+}
+.contactSection button{
+    text-transform: uppercase;
+    font-size: 25px;
+    background: #ef664d;
+    border: none;
+    display: inline-block;
+    padding: 5px 60px;
+    margin-top: 10px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.contactSection button:hover:before{
+    width: 51%;
+}
+.contactSection button:hover:after{
+    width: 51%;
+}
+.contactSection button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    background: rgb(82, 40, 40);
+    z-index: -1;
+    transition: .5s;
+}
+.contactSection button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: rgb(82, 40, 40);
+    z-index: -1;
+    transition: .5s;
+}
+.footerSection{
+    background: #2e3e4e;
+}
+.footer{
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.footer span{
+    color: #ef664d;
+}
